@@ -1,0 +1,67 @@
+body{
+background: url(../img/background.png);
+background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.bonus_head{
+    color:#fef1a2 !important;
+    text-align: center;
+    font-weight: bolder;
+}
+.margin_top_3{
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.card_h_color{
+    background-image: linear-gradient(90deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    text-align: center;
+    color: #a54e07 !important;
+    font-weight: bold;
+    font-size: 30px;
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+}
+.c_border{
+    border: 1px solid #fef1a2 !important;
+    border-radius: 2.25rem;
+}
+.card_bcolor{
+    background: rgb(0,0,0) !important;
+    opacity:.8;
+    border-bottom-left-radius: 1.25rem !important;
+    border-bottom-right-radius:1.25rem !important;
+}
+.bonus1{
+    text-align: center;
+    color:#fef1a2 !important;
+    font-size: 40px;
+}
+.bonus2{
+    text-align: center;
+    color:#fef1a2 !important;
+    font-size: 40px;
+}
+.click1 a{
+    color:rgb(255,255,255) !important;
+    font-size: 30px;
+    float:right;
+}
+.click2 a{
+    color:rgb(255,255,255) !important;
+    font-size: 30px;
+    float:right;
+}
+.px_margin{
+    margin-top: 3%;
+}
+.card {
+   border-radius: 1.25rem;
+}
+@media (min-width:320px) and (max-width:767px){
+
+.margin_top_3 {
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+}

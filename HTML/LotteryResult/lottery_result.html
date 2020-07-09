@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Thongkonbet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootsrape/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/lottery_result.css" />
+    <script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<section>
+            <div class="row bg-dark">
+                <div class="col-sm-12 ">
+                    <div class="row">
+                       
+                        <div class="col-sm-12" style="padding: 0px;">
+                            <nav class="navbar navbar-expand-md navbar-dark height_70">
+                                <a href="#" class="navbar-brand">
+									<img src="../img/New folder_5/FINAL/13.png" style="height:70px;width:220px;" />
+                                </a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                        data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse m_collaps_menu" id="navbarCollapse" style="margin-right: -15px;">
+                                    <div class="navbar-nav  menu_div">
+                                        <div class="header_div">
+                                            <i class="fa fa-database database_icon" aria-hidden="true"></i>
+                                            <p id="CreditValue" class="header_icon">Credit</p>
+                                            <i class="fa fa-btc database_icon" aria-hidden="true"></i>
+                                            <i style="color:#fff;" class="fa fa-refresh" aria-hidden="true" onclick="CallCreditDisplay()"></i>
+                                        </div>
+                                       
+                                        <i class="fa fa-user user_icon" aria-hidden="true"></i>
+                                        <div class="user_name">
+                                            <p class="white">hello</p>
+                                            <h4 class="margin_top_m_25 margin_5_top">UserName</h4>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-nav ml-auto">
+                                        <button type="button" class="btn btn-primary m_hamurger_menu " id="hamburger" data-toggle="modal" data-target="#myModallogout" data-backdrop="static" data-keyboard="false">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</div>
+	<div class="container-fluid back_img">
+        <section> 
+            <div class="row"> 
+                 <div class="col-sm-12 padding_0"> 
+                      <div class="main_div"> 
+                      <img src="../img/New folder_5/FINAL/2.png" class="icon_h_w"><br> 
+                      <span class="sub_header_text">Home</span> 
+                      </div> 
+                      <div class="main_div" style="margin-right:-5px;"> 
+                      <img src="../img/New folder_5/FINAL/3.png" class="icon_h_w"><br> 
+                      <span class="sub_header_text">Bet</span> 
+                      </div> 
+                      <div class="main_div">
+                          <a href="../html/bonus.html" >
+                           <img src="../img/New folder_5/FINAL/4.png" class="icon_h_w" ><br> 
+                           <span class="sub_header_text">Bonus</span> </a>
+                      </div> 
+                      <div class="main_div"> 
+                        <a href="../html/lottery_result.html" >
+                           <img src="../img/New folder_5/FINAL/5.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Draw</span> </a>
+                      </div> 
+                      <div class="main_div"> 
+                           <img src="../img/New folder_5/FINAL/6.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Games</span> 
+                      </div> 
+                      <div class="main_div" style="margin-right:-5px;"> 
+                        <a href="../html/set_number.html" >
+                           <img src="../img/New folder_5/FINAL/7.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Fav.number</span> </a>
+                      </div> 
+                      <div class="main_div7"> 
+                           <img src="../img/New folder_5/FINAL/8.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">AF</span> 
+                      </div> 
+                 </div> 
+            </div> 
+             
+       </section>
+		<section>
+			<div class="row margin_top_22">
+				<div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4 align_center">
+                            <h2>
+                                <img src="../img/New folder_5/draw.png" width="70px;"> <span style="color:#bc881b;font-weight: bolder;">Prize</span>
+                            </h2>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+					
+				</div>
+            </div>
+            <div class="row card_margin">
+               <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                   
+                                    <div class="border_left">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" name="date" value="01/07/2020" >
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">O.K</span>
+                                              </div>
+                                          </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 align_center">
+                                   <h3 class="color_text">Internal</h3> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card m_card">
+                                        <div class="card-header card_header_color">Internal Round 69</div>
+                                        <div class="card-body padding_0_rem">
+                                        <div class="row">
+                                            <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                <p class="top3_align_center">Top 3</p>
+                                                <p class="top3_align_center font_large">123</p>
+                                            </div>
+                                            <div class="col-sm-6 padding_25">
+                                                <p class="top2_align_center">Top 2</p>
+                                                <p class="top2_align_center font_large">23</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card m_card">
+                                        <div class="card-header card_header_color"> VIP Round 69</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="top3_align_center">Top 3</p>
+                                                    <p class="top3_align_center font_large">123</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="top2_align_center">Top 2</p>
+                                                    <p class="top2_align_center font_large">23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row margin_top_2">
+                                <div class="col-sm-12 align_center">
+                                    <h3 class="color_text">Government Lottery - 1 July 2020</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large">Wait for result</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-3 border_right  m_border_bottom padding_25">
+                                                    <p class="main_draw">Main Draw</p>
+                                                    <p class="main_draw font_large">123456</p>
+                                                </div>
+                                                <div class="col-sm-3 border_right  m_border_bottom padding_25">
+                                                    <p class="lead_3">3 leading</p>
+                                                    <p class="lead_3 font_large">123</p>
+                                                </div>
+                                                <div class="col-sm-3 border_right  m_border_bottom padding_25">
+                                                    <p class="trail_3">3 Trail</p>
+                                                    <p class="trail_3 font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-3 padding_25">
+                                                    <p class="lower_2">2 Lower</p>
+                                                    <p class="lower_2 font_large">23</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin_top_2">
+                                <div class="col-sm-12 align_center">
+                                    <h3 class="color_text">Stock Lottery - 1 july 2020</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 6.png"  class="width_img" /> China Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"> <img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row margin_top_2">
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large"><img src="../img/flags/Asset 12.png" class="width_img"  /> Loas Lottery</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row margin_top_2">
+                                <div class="col-sm-12 align_center">
+                                    <h3 class="color_text">Internal Lottery - 1 july 2020</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large">Lottery Round 1</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right  m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large">Lottery Round 2</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large">Lottery Round 3</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card m_card">
+                                        <div class="card-header align_center font_large">Lottery Round 4</div>
+                                        <div class="card-body padding_0_rem">
+                                            <div class="row">
+                                                <div class="col-sm-6 border_right m_border_bottom padding_25">
+                                                    <p class="upper_2 align_center">2 upper</p>
+                                                    <p class="upper_2 align_center font_large">23</p>
+                                                </div>
+                                                <div class="col-sm-6 padding_25">
+                                                    <p class="lower_2 align_center">2 Lower</p>
+                                                    <p class="upper_2 align_center font_large">43</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                      </div>
+                </div>
+            </div>
+			
+		</section>
+		
+
+	
+
+	
+
+     <section>
+			<div class="row" style="padding-top: 10px;">
+				<div class="col-sm-12" style="text-align: center;">
+					<p style="color:#fff;"><span>SECURE WEBSITE</span><span></span>
+						<span> 100% GUARANTEE</span>
+					</p>
+					<p style="color:#fff;margin-top: 0rem"><span>&copy;	2020 Copyright -</span>
+						<span style="color:#c7bda2">THONGKONBET.COM</span>
+						<span>ALL RIGHTS RESERVED.</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- hamburger menu -->
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-lg modal_lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header modal_header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body modal_body">
+						<div class="row">
+							<div class="col-sm-5"></div>
+							<div class="col-sm-4" >
+								<div class="menu">
+									<ul type="none">
+										<li><i class="fa fa-user fa_user_size"></i></li>
+										<li>user name
+											<b>
+												<font>credit $0.00</font>
+											</b>
+											<div class="dropdown-divider "></div>
+										</li>
+										<!-- <li>
+											<div class="dropdown-divider "></div>
+										</li> -->
+										<li><a href="#">User account settings</a></li>
+										<li><a href="#">Bank account</a></li>
+										<li><a href="#">Top up</a></li>
+										<li><a href="#">How to use</a></li>
+										<li><a href="#">Help center</a></li>
+										<li class="nav-item dropdown"
+											style="margin-right: 5px;background: #fff;border-radius: 13px;">
+											<a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+												data-toggle="dropdown">
+												<span class="flag-icon flag-icon-th"></span> <span>Thai</span>
+											</a>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-th margin_right_5"></span><span>Thai</span></a>
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-gb margin_right_5"></span><span>English</span></a>
+												
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-divider "></div>
+										</li>
+										<li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- end of hamburger menu -->
+
+		
+
+	</div>
+</body>
+
+</html>

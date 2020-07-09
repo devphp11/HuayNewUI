@@ -1,0 +1,146 @@
+body{
+    background: url(../../img/background.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+	background-position:center;
+    }
+    .white{
+        color:white;
+        font-size: 20px;
+    }
+    #navbardrop{
+        border: 1px #f5bd70 solid;
+        border-radius: 10px;
+    }
+    input[type=text], input[type=password] {
+         padding: 10px;
+         display: inline-block;
+         border: none !important;
+         width:94%;
+         background: #000;
+         /* margin-top: 15px; */
+     }
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+       
+      }
+      .btn_remeber{
+        padding-left: 7.5%;
+      }
+     
+
+    .login_border{
+        border: 2px #f5bd70 solid;
+        border-radius: 10px;
+        padding:5%;
+        background: #000;
+       
+    }
+    .forgot_pass_color{
+        color: #a54e07;
+        float: right;
+    }
+    .forgot_pass_color:hover{
+        color: #a54e07;
+        text-decoration:none;
+    }
+    .burlywood_btn {
+        display: inline-block;
+        outline: none;
+        /* font-family: inherit; */
+        font-family: SukhumvitBold;
+        font-size: 1em;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0px !important;
+        height: auto;
+        line-height: 1.9em;
+        text-transform: uppercase;
+        padding: 3px 0;
+        /* box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4), inset 0 -1px 2px 1px rgba(139,66,8,1), inset 0 -1px 1px 2px rgba(250,227,133,1); */
+        background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+        border: 1px solid #a55d07;
+        color: rgb(120,50,5);
+        /* text-shadow: 0 2px 2px rgba(250, 227, 133, 1); */
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        background-size: 100% 100%;
+        background-position: center;
+    
+    }
+    .burlywood_btn:focus, .burlywood_btn:hover {
+        background-size: 150% 150%;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250,227,133,1);
+        border: 1px solid rgba(165,93,7,.6);
+        color: rgba(120,50,5,.8);
+    }
+    .btn_register{
+        width:100% !important;
+    }
+    .btn_contactus{
+        width: 100% !important;
+        background: whitesmoke;
+        border-color: whitesmoke;
+        color: gray;
+    }
+    .btn {
+    border-radius: 5px !important;
+   }
+   .margin_top_3{
+       margin-top: 3%;
+   }
+   .logo_width {
+    width: 50%;
+    margin-left: 25%;
+}
+.logo_img {
+    height: 60px;
+    width: 167px;
+    margin-top: 27px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    input[type=text], input[type=password] {
+       
+        margin-left: -2px;
+    }
+    .btn_remeber {
+        padding-left: 10.5%;
+    }
+    .forgot_pass_color {
+       
+        margin-top: -23px;
+    }
+    .m_btn_register{
+        width:50% !important;
+    }
+    .m_btn_contact{
+        width:50% !important;   
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    input[type=text], input[type=password] {
+       
+        margin-left: -4px;
+    }
+    .btn_remeber {
+        padding-left: 12.5%;
+    }
+    .forgot_pass_color{
+        margin-left: 43%;
+    }
+    .m_btn_contact{
+        padding: 0px !important; 
+    }
+    .btn_contactus {
+        width: 88% !important;
+      
+    }
+}
+@media screen and (min-width:1701px) and (max-width:2000px) {
+    .btn_remeber {
+        padding-left: 4.5%;
+    }
+
+}

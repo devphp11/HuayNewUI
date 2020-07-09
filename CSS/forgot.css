@@ -1,0 +1,229 @@
+.back_img{
+      background: url(../../img/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .white{
+        color:white;
+        font-size: 20px;
+    }
+    #countryCode {
+        height: 38px;
+        margin-left: 1px;
+        width: 94px;
+    }
+    .cls_black{
+      color:black;
+    }
+    .captchaDiv{
+   margin-left: 23%;
+   margin-top: 18px;
+}
+    .forgot_password_head{
+      color: goldenrod !important;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 27px;
+}
+.info_text {
+    color: goldenrod !important;
+    text-align: center;
+    margin-top: 34px;
+}
+  .txt_label{
+    color: goldenrod !important;
+    font-size: 18px;
+}
+    #navbardrop{
+        border: 1px #f5bd70 solid;
+        border-radius: 10px;
+    }
+    input[type=text], input[type=password] {
+         padding: 10px;
+         display: inline-block;
+         border: none;
+         width:94%;
+         height: 37px;
+         /* margin-top: 15px; */
+     }
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+    .login_border{
+        border: 2px #f5bd70 solid;
+        border-radius: 10px;
+        padding:5%;
+        background-color: black;
+    }
+    .forgot_pass_color{
+        color: #a54e07;
+    }
+    .forgot_pass_color:hover{
+        color: #a54e07;
+        text-decoration:none;
+    }
+    .burlywood_btn {
+        display: inline-block;
+        outline: none;
+        /* font-family: inherit; */
+        font-family: SukhumvitBold;
+        font-size: 1em;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 0px !important;
+        height: auto;
+        line-height: 1.9em;
+        text-transform: uppercase;
+        padding: 3px 0;
+        /* box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4), inset 0 -1px 2px 1px rgba(139,66,8,1), inset 0 -1px 1px 2px rgba(250,227,133,1); */
+        background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+        border: 1px solid #a55d07;
+        color: rgb(120,50,5);
+        /* text-shadow: 0 2px 2px rgba(250, 227, 133, 1); */
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+    .burlywood_btn:focus, .burlywood_btn:hover {
+        background-size: 150% 150%;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250,227,133,1);
+        border: 1px solid rgba(165,93,7,.6);
+        color: rgba(120,50,5,.8);
+    }
+    .btn_reset{
+        width:100%;
+    }
+    .btn_contactus{
+        width: 100% !important;
+        background: whitesmoke;
+        border-color: whitesmoke;
+        color: gray;
+    }
+    .btn {
+    border-radius: 5px !important;
+   }
+   .margin_top_3{
+       margin-top: 5%;
+       width: 101%;
+     margin-left: 2%;
+   }
+   .margin_top_33 {
+    margin-top: 5%;
+    width: 166%;
+    margin-left: 6%;
+}
+   .gold_btn{
+   margin-left: -24px;
+}
+   .logo_width {
+    width: 50%;
+    margin-left: 26%;
+}
+.logo_img {
+    height: 60px;
+    width: 167px;
+    margin-top: 27px;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  .btn_reset {
+    width: 60%;
+    margin-left: -25px;
+}
+.gold_btn {
+    margin-left: -2px;
+}
+#otp{
+    margin-left: 7px;
+}
+    #formContent {
+        width: 100% !important;
+    }
+
+    .loader_div {
+        left: 16%;
+    }
+    #countryCode {
+    width: 25%;
+    font-size: 13px;
+}
+#btnResetPass{
+    margin-left: -9px;
+}
+#txtPhoneNumber {
+    width: 70%;
+    margin-left: 25%;
+    margin-top: -38px;
+    height: 37px;
+}
+.col_phone{
+    margin-top: -30px;
+    height: 55px;
+}
+.captchaDiv {
+    margin-left: -2%;
+    margin-top: 18px;
+}
+.margin_top_3 {
+    margin-left: 0%;
+}
+}
+@media screen and (max-width:414px) and (min-width:411px) {
+  .captchaDiv {
+    margin-left: 4%;
+    margin-top: 18px;
+}
+}
+@media screen and (max-width: 1023px) and (min-width:768px){
+        .captchaDiv {
+       margin-left: 2%;
+   }
+   .gold_btn {
+    margin-left: -14px;
+}
+ }
+ @media screen and (max-width: 1200px) and (min-width:1024px){
+       .captchaDiv {
+       margin-left: 17%;
+   }
+ }
+ @media screen and (max-width: 1700px) and (min-width:1500px){
+        .captchaDiv {
+        margin-left: 30%;
+    }
+    #countryCode {
+    height: 38px;
+    margin-left: 1px;
+    width: 118px;
+}
+#btnResetPass{
+    margin-left: -23px;
+}
+  }
+  @media screen and (max-width: 1365px) and (min-width:1201px){
+        .captchaDiv {
+        margin-left: 26%;
+    }
+  }
+  @media screen and (max-width: 2000px) and (min-width:1701px){
+        .captchaDiv {
+        margin-left: 34%;
+    }
+    #countryCode {
+    height: 38px;
+    margin-left: 1px;
+    width: 143px;
+}
+.gold_btn {
+    margin-left: -41px;
+}
+#btnResetPass{
+    margin-left: -30px;
+}
+  }

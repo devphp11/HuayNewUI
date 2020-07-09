@@ -1,0 +1,338 @@
+body{
+background: url(../img/background.png);
+background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.form-control {
+    
+    border: 1px solid #000000;
+   
+    
+}
+.custom-user-icon {
+    position: absolute;
+    top: 74%;
+    left: 54%;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 31px;
+}
+.image-upload
+{
+    position:relative;
+}
+a:hover.click_btn {
+    color: goldenrod !important;
+}
+.account_align{
+    background: goldenrod !important;
+    text-align: center;
+    color:#fff !important;
+}
+#sam{
+    padding-left:15px;
+}
+.btn_record{
+    background:goldenrod !important;
+    color:#a54e07;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.btn_cancel{
+    background: #000 !important;
+    color:#fff;
+    font-weight: bolder;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: goldenrod !important;
+}
+.btn_tool{
+    float:right;
+}
+.font_bold{
+    font-weight: bolder;
+}
+.float_right{
+    float:right;
+}
+.margin_left1{
+    margin-left: 20px;
+}
+.margin_top_new{
+    margin-top:3%;
+}
+.width_all{
+    width:33.5% !important;
+}
+.img_style{
+    width: 100px;
+    /* margin-left: 600px; */
+    background: lightgray;
+    border-radius: 50px;
+}
+/* old css */
+.cls_img{
+    width:0px !important;
+    cursor:pointer!important;
+    }
+    @media screen and (max-width: 359px) and (min-width:320px){
+        .form-control {
+        width: 100%;
+        /* height: 106% !important; */
+    }
+    .margin_left1 {
+        margin-left: -17px;
+    }
+    .img_style {
+        width: 100px;
+        margin-left: 459px;
+        background: lightgray;
+        border-radius: 50px;
+    }
+    .float_right {
+        float: left;
+    }
+    .margin_bottom_btn {
+        margin-bottom: 40px;
+        margin-left: -12%;
+    }
+    }
+    @media screen and (max-width: 410px) and (min-width:360px){
+        .custom-user-icon {
+            left: 75%!important;
+        }
+        .image-upload {
+            margin-left: -122%;
+        }
+        .img_style {
+            width: 100px;
+            margin-left: 455px !important;
+            background: lightgray;
+            border-radius: 50px;
+        }
+    }
+    @media screen and (max-width: 414px) and (min-width:361px){
+    .custom-user-icon {
+        left: 72%!important;
+    }
+    .margin_bottom_btn {
+        margin-bottom: 35px;
+        margin-left: -21%;
+    }
+    #username,#firstname,#lastname, #phone, #txtLine,#old_password,#new_password,#confirm_password{
+        width: 100% !important;
+        height: 47px !important;
+    }
+    #phone_div{
+        margin-top: 18px!important;
+    }
+    .image-upload {
+        margin-left: -120%!important;
+    }
+    .img_style {
+        width: 100px;
+        margin-left: 515px !important;
+        background: lightgray;
+        border-radius: 50px;
+    }
+    }
+    @media screen and (max-width: 320px) and (min-width:211px){
+    .custom-user-icon {
+        left: 78%!important;
+    }
+    .image-upload {
+        margin-left: -156%!important;
+    }
+    }
+    @media screen and (max-width: 1700px) and (min-width:1500px){
+    .back_color {
+        margin-top: 1px!important;
+    }
+    .image-upload {
+        margin-left: 14px!important;
+    }
+    .custom-user-icon {
+        left: 45%!important;
+    }
+    }
+    @media screen and (max-width: 2000px) and (min-width:1701px){
+        .dmy-cal-days, .dmy-cal-months, .dmy-cal-years{
+        width: 241px!important;
+    }
+    .account_color{
+        margin-top: 0px!important;
+    }
+    .back_color {
+        margin-top: 0px!important;
+    }
+    .wid_amt{
+        margin-top: 0px!important;
+    }
+    .image-upload {
+        margin-left: 233px!important;
+    }
+    .custom-user-icon {
+        left: 39%!important;
+    }
+    #dateinputYears{
+        margin-left: 34px!important;
+    }
+    #dateinputMonths{
+        margin-left: 15px!important;
+    }
+    }
+    @media screen and (max-width: 1365px) and (min-width:1200px){
+      .back_color {
+        margin-top: 0px!important;
+    }
+    .image-upload {
+        margin-left: -34px!important;
+    }
+    }
+    @media screen and (max-width: 1200px) and (min-width:1024px){
+    .back_color {
+        margin-top: 0px!important;
+    }
+    .image-upload {
+        margin-left: -153px;
+    }
+    .custom-user-icon {
+        left: 54%!important;
+    }
+    }
+    @media screen and (max-width: 767px) and (min-width:321px) {
+        .img_style {
+            width: 100px;
+            margin-left: 455px;
+            background: lightgray;
+            border-radius: 50px;
+        }
+        .margin_left1 {
+            margin-left: -15px;
+        }
+        .float_right {
+            float: left;
+        }
+        .margin_bottom_btn {
+            margin-bottom: 35px;
+            margin-left: -18%;
+        }
+    .c_modal_content {
+        background-color: #fff0 !important;
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
+    }.dropdown{
+    margin-left: -26px!important;
+        width: 100%!important;
+    }
+    .bg-dark {
+        width: 109% !important;
+    }
+    .back_color {
+        margin-left: -7%!important;
+        width: 113%!important;
+        margin-top: 1px!important;
+    }
+    .wid_amt {
+        width: 112.5%!important;
+        margin-left: -20px!important;
+    }
+    .All_wid {
+        width: 102.4%!important;
+        margin-left: -5px!important;
+    }
+    
+     .sweet-alert{
+    margin-left: 11px !important;
+        width: 86%!important;
+    }
+    .form-control {
+        width: 100% !important;
+        /* height: 106% !important; */
+    }
+    }
+    @media screen and (max-width: 1023px) and (min-width:768px){
+    .back_color {
+        width: 119%!important;
+        margin-left: -19px;
+    }
+    .custom-user-icon {
+        left: 62%!important;
+    
+    }
+    .wid_amt {
+        margin-left: -3.6%!important;
+        width: 117.5%!important;
+    }
+    .All_wid {
+        width: 102.4%!important;
+        margin-left: -5px!important;
+    }
+     .All_row {
+        width: 117.5%;
+        margin-left: -20px;
+    }
+    .image-upload {
+        margin-left: -46%;
+    }
+    
+    }
+    .width_row{
+      
+        background:lightgrey !important;
+        opacity:0.9;
+        /* height:1000px; */
+    }
+    a { 
+        color: black !important; 
+    } /* CSS link color */
+    
+    .div_width{
+        
+        background: #fef1a2 !important;
+        border-radius: 50px;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        max-width: 18%;
+        max-width: 90% !important;
+        margin-left: 52px;
+    }
+    /* .account_align{
+       
+        margin-top: 5px;
+    } */
+    .back_color{
+        background: gray;
+        padding: 10px;
+    }
+    .account_color{
+    background:white !important;
+    }
+    .profile_top_margin{
+        margin-top: 10px;
+    }
+    .img_center_align{
+        text-align: center !important;
+        
+    }
+    /* .btn_record{
+        width:100% !important;
+        
+    } */
+    .margin_bottom_btn{
+        margin-bottom: 40px;
+    }
+    .image-upload>input {
+        display: none;
+        
+    }
+    
+    .form-control {
+        border-top-right-radius: .25rem !important;
+        border-bottom-right-radius: .25rem !important;
+        max-width: 100% !important;
+    }
+
+    

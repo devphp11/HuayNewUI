@@ -1,0 +1,186 @@
+body{
+/* background: url(../img/thongkonbetbg1.jpg); */
+background-size: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.white{
+    color:white !important;
+}
+
+.logo_text{
+    font-family: initial;
+    font-weight: 700;
+    padding-left: 5px;
+}
+.margin_right_5{
+    margin-right: 5px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 600;
+    
+}
+.bg-dark{
+    background-color: #343a40!important;
+}
+.navbar-dark .navbar-brand {
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+.user_name{
+    color: rgba(255, 187, 0, 0.97) !important;
+}
+.modal-header {
+    color: #fff !important;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+    background-color:#343a40 !important
+}
+button.close {
+    color: #fff !important;
+}
+
+.burlywood_btn:focus, .burlywood_btn:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250,227,133,1);
+    border: 1px solid rgba(165,93,7,.6);
+    color: rgba(120,50,5,.8);
+}
+
+/* hamburger menu */
+#hamburger{
+
+    /* box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4), inset 0 -1px 2px 1px rgba(139,66,8,1), inset 0 -1px 1px 2px rgba(250,227,133,1); */
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120,50,5);
+    /* text-shadow: 0 2px 2px rgba(250, 227, 133, 1); */
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-left: -131% !important;
+
+}
+.menu_div {
+    margin-left: 44%;
+    padding-top: 10px;
+}
+
+.nav_item_drop {
+    width: 50%;
+    margin-left: 24%;
+}
+.txt_font {
+        font-size: 25px;
+    }
+.user_icon {
+    font-size: 23px !important;
+    background: darkgrey;
+    color:white !important;
+    border: 1px solid #000;
+    padding: 7px 10px;
+    border-radius: 20px;
+    height: 40px;
+    margin: 0px 5px 0px 5px;
+}
+
+.header_div {
+    display: flex;
+    height: 40px;
+    background: rgba(78, 75, 63, 0.9) !important;
+    border-radius: 5px;
+    border: 1px solid #b47e11 !important;
+    color: rgba(255, 187, 0, 0.97) !important;
+    padding: 1%;
+}
+
+.database_icon {
+    font-size: 25px !important;
+    padding: 8px;
+    color: rgba(255, 187, 0, 0.97) !important;
+}
+
+.margin_top_m_25 {
+    margin-top: -5px;
+}
+
+.height_70 {
+    height: 70px;
+}
+
+.header_icon {
+    padding-top: 0px;
+    font-size: 25px;
+    padding-right: 3px;
+    padding-left: 3px;
+    color: rgba(255, 187, 0, 0.97) !important;
+}
+
+
+.hamburger_menu {
+    margin: 0px -17px 0px -19px !important;
+}
+
+.hamburger_menu_height {
+    height: 654px;
+}
+
+.vip_level_div {
+    margin-right: 15px;
+    margin-top: 4%;
+}
+
+
+.dropdown-menu{
+    width:3%;
+}
+.modal_lg{
+
+        max-width: 100% !important;
+        margin: 0px 0px 0px 0px !important;
+        margin-left: 200px !important;
+
+   }
+   
+.modal-lg, .modal-xl {
+    max-width: 150% !important;
+}
+.modal_body {
+    background: rgba(255, 187, 0, 0.97);
+    padding-bottom: 13.9% !important;
+
+}
+.modal_header{
+    background: rgba(255, 187, 0, 0.97) !important;
+}
+
+.modal_header .close {
+    background: #3f3e37bf;
+    margin-right:45px !important;
+    float:right;
+    opacity: 1;
+}
+.modal-header {
+    border-bottom: 0px solid #dee2e6 !important;
+    padding-top:10px;
+}
+.dropdown-divider {
+    height: 0px;
+    width: 100%;
+    /* margin-left: 205px !important; */
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+
+}
+ul > li > a:hover{
+        color: #d1d4d6 !important;
+        text-decoration: underline !important;
+        background-color: transparent !important;
+}
+.fa_user_size{
+    font-size: 135px !important;
+}

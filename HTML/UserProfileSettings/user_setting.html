@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Thongkonbet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootsrape/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/user_account_setting.css" />
+    <script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/day-month-year-calendar.js"></script>
+     <script>
+        $(document).ready(function () {
+            $('#example_1 .example_input').dayMonthYearCalendar({
+                container: $('#example_1 .selects_container')
+                , hideInput: true
+            });
+            });
+                </script>
+    
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<section>
+            <div class="row bg-dark">
+                <div class="col-sm-12 ">
+                    <div class="row">
+                       
+                        <div class="col-sm-12" style="padding: 0px;">
+                            <nav class="navbar navbar-expand-md navbar-dark height_70">
+                                <a href="#" class="navbar-brand">
+									<img src="../img/New folder_5/FINAL/13.png" style="height:70px;width:220px;" />
+                                </a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                        data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse m_collaps_menu" id="navbarCollapse" style="margin-right: -15px;">
+                                    <div class="navbar-nav  menu_div">
+                                        <div class="header_div">
+                                            <i class="fa fa-database database_icon" aria-hidden="true"></i>
+                                            <p id="CreditValue" class="header_icon">Credit</p>
+                                            <i class="fa fa-btc database_icon" aria-hidden="true"></i>
+                                            <i style="color:#fff;" class="fa fa-refresh" aria-hidden="true" onclick="CallCreditDisplay()"></i>
+                                        </div>
+                                       
+                                        <i class="fa fa-user user_icon" aria-hidden="true"></i>
+                                        <div class="user_name">
+                                            <p class="white">hello</p>
+                                            <h4 class="margin_top_m_25 margin_5_top">UserName</h4>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-nav ml-auto">
+                                        <button type="button" class="btn btn-primary m_hamurger_menu " id="hamburger" data-toggle="modal" data-target="#myModallogout" data-backdrop="static" data-keyboard="false">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</div>
+	<div class="container-fluid back_img">
+      
+		<section>
+            <div class="row margin_top_new">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header account_align">
+                            <h3><i class="fa fa-cog"></i> User acccount setting</h3>
+                        </div>
+                        <div class="card-body">
+                           <div class="row">
+                               <div class="col-sm-12">
+                                <form name="userProfile_form">
+                                    <div class="row margin_left1">
+                                        <div class="col-sm-12 profile_top_margin">
+                                            <h4 class="font_bold"><i class="fa fa-user"></i> User Account Setting</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row image-upload">
+                                        <div class="col-sm-12" style="text-align: center;">
+                                        <label for="file-input" class="cls_img">
+                                            <img src="../img/noavatar.png" class="img_style"accept="img/png,img/jpeg" />
+                                            <br>
+                                            <!-- @{
+                                                string defaultPath = Session["defaultUserImagePath"].ToString();
+                                                <img id="IDimage" src="@Url.Content(ViewBag.ImagePath)" onerror="this.onerror=null; this.src='@Url.Content(defaultPath)'" style="width:100px;margin-left: 482px;border-radius: 100%;" accept="img/png,img/jpeg" />
+                                            } -->
+            
+                                            <!-- <i class="custom-user-icon fa fa-user-plus" aria-hidden="true"></i> -->
+                                            <i class="fa fa-camera custom-user-icon" aria-hidden="true"></i>
+                                        </label>
+                                        
+                                    </div>
+                                    <input id="file-input" type="file" accept=".png, .jpg, .jpeg" />
+                                    </div>
+                                    <div class="row form-group margin_left1" id="username_div">
+                                        <div class="col-sm-5">
+                                            <lable class="font_bold">Username</lable>
+                                            <input type="text" id="username" name="username" class="form-control" placeholder="Username" readonly>
+                                            <div id="username_error"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group margin_left1" id="firstname_div">
+                                        <div class="col-sm-5">
+                                            <lable class="font_bold">Firstname</lable>
+                                            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Firstname" onkeypress="return AvoidSpace(event)">
+                                            <div id="firstname_error"></div>
+                                        </div>
+                                        <div class="col-sm-5" id="lastname_div">
+                                            <lable class="font_bold">Lastname</lable>
+                                            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Lastname" >
+                                            <div id="lastname_error"></div>
+                                        </div>
+            
+                                    </div>
+                                    <div class="row form-group margin_left1">
+                                        <div class="col-sm-5" id="example_1">
+                                            <label class="font_bold">Birthday</label>
+                                            <input class="example_input form-control" id="dateinput" type="datetime-local" />
+                                            <div class="selects_container " style="display: flex;margin-top: -5px;"></div>
+                                        </div>
+                                        <div class="col-sm-5" id="phone_div">
+                                            <lable class="font_bold">Phone Number</lable>
+                                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone No">
+                                            <div id="phone_error"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row form-group margin_left1">
+                                        <div class="col-sm-5" id="line_div">
+                                            <lable class="font_bold">Email</lable>
+                                            <input type="text" id="txtLine" name="txtLine" class="form-control" placeholder="Email">
+                                            <div id="line_error"></div>
+                                        </div>
+                                    </div>
+                                      
+                                        <div class="row margin_left1">
+                                            <div class="col-sm-12">
+                                                <h4 class="font_bold"><i class="fa fa-user"></i> Password management</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group margin_left1" id="old_password_div">
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-sm-2"><lable class="font_bold float_right">Old Password</lable></div>
+                                                    <div class="col-sm-5"> <input type="password" id="old_password" name="old_password" class="form-control"></div>
+                                                </div>
+                                             <div id="old_password_error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group margin_left1" id="new_password_div">
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-sm-2"><lable class="font_bold float_right">New password</lable></div>
+                                                    <div class="col-sm-5"> <input type="password" id="new_password" name="new_password" class="form-control"></div>
+                                                </div>
+                                            <div id="new_password_error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row form-group margin_left1" id="confirm_password_div">
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-sm-2"><lable class="font_bold float_right">Confirm Password</lable></div>
+                                                    <div class="col-sm-5"><input type="password" id="confirm_password" name="confirm_password" class="form-control"></div>
+                                                </div>
+                                              
+                                                
+                                                <div id="confirm_password_error"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 margin_bottom_btn ">
+                                                <!-- <button type="button" onclick="UpdateUserAccountSettings();" class="btn btn-success btn_record" id="btnUserProfile"><i class="fa fa-camera-retro"></i> Record</button> -->
+                                                <div class="btn-toolbar btn_tool" >
+                                                    <button class="btn btn_record" id="btnUserProfile"><i class="fa fa-camera-retro"></i> Record</button>
+                                                    <button class="btn btn_cancel">Cancel
+                                                    </button>
+                                                  </div>
+                                        </div>
+                                    </div>
+                                </form>
+                               </div>
+                           </div>
+                        </div>
+                       
+                      </div>
+                    
+                </div>
+            </div>		
+			
+		</section>
+		
+
+	
+
+	
+
+     <section>
+			<div class="row" style="padding-top: 10px;">
+				<div class="col-sm-12" style="text-align: center;">
+					<p style="color:#fff;"><span>SECURE WEBSITE</span><span></span>
+						<span> 100% GUARANTEE</span>
+					</p>
+					<p style="color:#fff;margin-top: -1rem"><span>&copy;	2020 Copyright -</span>
+						<span style="color:#c7bda2">THONGKONBET.COM</span>
+						<span>ALL RIGHTS RESERVED.</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- hamburger menu -->
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-lg modal_lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header modal_header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body modal_body">
+						<div class="row">
+							<div class="col-sm-5"></div>
+							<div class="col-sm-4" >
+								<div class="menu">
+									<ul type="none">
+										<li><i class="fa fa-user fa_user_size"></i></li>
+										<li>user name
+											<b>
+												<font>credit $0.00</font>
+											</b>
+											<div class="dropdown-divider "></div>
+										</li>
+										<!-- <li>
+											<div class="dropdown-divider "></div>
+										</li> -->
+										<li><a href="#">User account settings</a></li>
+										<li><a href="#">Bank account</a></li>
+										<li><a href="#">Top up</a></li>
+										<li><a href="#">How to use</a></li>
+										<li><a href="#">Help center</a></li>
+										<li class="nav-item dropdown"
+											style="margin-right: 5px;background: #fff;border-radius: 13px;">
+											<a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+												data-toggle="dropdown">
+												<span class="flag-icon flag-icon-th"></span> <span>Thai</span>
+											</a>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-th margin_right_5"></span><span>Thai</span></a>
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-gb margin_right_5"></span><span>English</span></a>
+												
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-divider "></div>
+										</li>
+										<li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- end of hamburger menu -->
+
+		
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+body{
+background: url(../img/background.png);
+background-position: center; /* Center the image */
+background-repeat: no-repeat;
+background-size: cover;
+}
+.border_left{
+    float:right !important;
+}
+.color_text{
+    color:#b47e11 !important;
+}
+.align_center{
+    text-align: center;
+}
+.card_header_color{
+    background: #b17d10 !important;
+    color: white !important;
+    font-weight: bolder;
+}
+.top3_align_center{
+    text-align: center;
+}
+.top2_align_center{
+    text-align: center;
+}
+.border_right{
+    border-right: 1px solid  #ccc;
+}
+.font_large{
+    font-weight: bolder;
+}
+.margin_top_2{
+    margin-top: 2%;
+}
+.margin_top_22{
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.main_draw{
+   text-align: center; 
+}
+.lead_3{
+    text-align: center; 
+}
+.trail_3{
+    text-align: center; 
+}
+.lower_2{
+    text-align: center; 
+}
+.padding_0_rem{
+    padding:0rem;
+}
+.padding_10{
+    padding:10px;
+}
+.padding_25{
+    padding:25px;
+}
+p{
+    margin-bottom: 0rem !important;
+}
+.width_img{
+    width:40px;
+}
+.input-group-text {
+   
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    .m_card{
+        margin-top: 15px;
+    }
+    .border_right{
+    
+        border-right: 0px solid #ccc; 
+    }
+    .m_border_bottom{
+        border-bottom: 1px solid #ccc; 
+    }
+    .padding_0_rem {
+        padding: 0rem 15px;
+    }
+}

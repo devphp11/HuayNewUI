@@ -1,0 +1,193 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/bootsrape/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/contact/contact.css" asp-append-version="true" />
+    <script src="../../js/jquery.min.js"></script>
+	<script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+		 		<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+    <div class="container-fluid back_img">
+        <section>
+            <div class="row">
+                <div class="col-sm-12 ">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10" style="padding: 0px;">
+                            <nav class="navbar navbar-expand-md">
+
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                        data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-right: -15px;">
+                                    <div class="navbar-nav ml-auto ">
+                                        <li class="nav-item dropdown bg_color"
+                                            style="margin-right: 5px;background: #fff;border-radius: 13px;">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                                               data-toggle="dropdown">
+                                                <span class="flag-icon flag-icon-th"></span>
+                                                <sapn>Thai</sapn>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="flag-icon flag-icon-th margin_right_5"></span><span>Thai</span>
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="flag-icon flag-icon-gb margin_right_5"></span>
+                                                    <sapn>English</sapn>
+                                                </a>
+
+                                            </div>
+                                        </li>
+
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                  <img src="../../img/thonglotto_final.png" class="logo_width" />
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+									<b><i class="fa fa-user" aria-hidden="true"></i> </b>
+								</div>
+                <div class="col-sm-6">
+									<div class="row">
+								 <div class="col-sm-1 user_icon">
+									<b><i class="fa fa-comments" aria-hidden="true"></i> </b>
+								</div>
+								<div class="col-sm-1 regi_text">
+									<div class="reg_head">Contact </div>
+								</div>
+							</div>
+                   <form name="register_form" class="register_form">
+										 <div class="row margin_bottom_1rem form-group" id="username_div">
+													 <div class="col-sm-1"></div>
+													 <div class="col-sm-2">
+															  <label for="username" class="white">Username</label>
+													 </div>
+													 <div class="col-sm-6">
+															 <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+															 <div id="username_error"></div>
+													 </div>
+													  <div class="col-sm-1"></div>
+											 </div>
+
+												<div class="row margin_bottom_1rem form-group" id="password_div">
+													<div class="col-sm-1"></div>
+													 <div class="col-sm-2">
+															 <lable class="white">Password</lable>
+													 </div>
+													 <div class="col-sm-6">
+															 <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+															 <div id="password_error"></div>
+													 </div>
+											<div class="col-sm-1"></div>
+											</div>
+
+											<div class="row margin_bottom_1rem">
+											<div class="col-sm-1"></div>
+											<div class="col-sm-2">
+													<label for="psw" class="white">Contact Type</label>
+											</div>
+											<div class="col-sm-6">
+												<select class="form-control" id="sel1">
+													 <option>Contact Type 1</option>
+													 <option>Contact Type 2</option>
+													 <option>Contact Type 3</option>
+													 <option>Contact Type 4</option>
+												 </select>
+														</div>
+														<div class="col-sm-1"></div>
+											</div>
+											<div class="row margin_bottom_1rem form-group" id="password_div">
+												<div class="col-sm-1"></div>
+												 <div class="col-sm-2">
+														 <lable class="white">Subject</lable>
+												 </div>
+												 <div class="col-sm-6">
+														 <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+														 <div id="subject_error"></div>
+												 </div>
+										<div class="col-sm-1"></div>
+										</div>
+										<div class="row margin_bottom_1rem form-group" id="password_div">
+											<div class="col-sm-1"></div>
+											 <div class="col-sm-2">
+													 <lable class="white">Message</lable>
+											 </div>
+											 <div class="col-sm-8">
+													  <textarea class="form-control" rows="5" id="message"></textarea>
+													 <div id="mesasge_error"></div>
+											 </div>
+										<div class="col-sm-1"></div>
+										</div>
+										<div class="form-group captchaDiv">
+									 <div class="g-recaptcha" data-sitekey="6LcU16wZAAAAAKa9BOpUKVLAyhjIlVtMmx89H04k" data-callback="verifyCaptcha"></div>
+										 <div id="g-recaptcha-error"></div>
+									 </div>
+
+									 <div class="row">
+												<div class="col-sm-1"></div>
+												<div class="col-sm-10">
+														<div class="row margin_top_311">
+																<div class="col-sm-3"></div>
+												<div class="col-sm-4">
+														 <a href="#"  id="btnsubmit"  class="btn burlywood_btn btn-block">
+													Submit
+												</a>
+										</div>
+												<div class="col-sm-4"id="btnCancel">
+													<a href="login.html">
+														<button type="button" class="btn btn-primary btn_contactus">
+																<span class="cls_black">Cancel </span>
+														</button>
+													</a>
+												</div>
+										</div>
+										</div>
+										</div>
+                    </form>
+
+
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row" style="padding-top: 10px;margin-top:5rem">
+                <div class="col-sm-12" style="text-align: center;">
+                    <p style="color:#fff;">
+                        <span>SECURE WEBSITE</span><span></span>
+                        <span> 100% GUARANTEE</span>
+                    </p>
+                    <p style="color:#fff;margin-top: -1rem">
+                        <span>&copy;	2020 Copyright -</span>
+                        <span style="color:#c7bda2">THONGKONBET.COM</span>
+                        <span>ALL RIGHTS RESERVED.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

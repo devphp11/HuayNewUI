@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Thongkonbet</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootsrape/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+	<link rel="stylesheet" href="../css/set_number.css" />
+    <script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- links for databale -->
+    <link rel="stylesheet" href="../css/bootsrape/dataTables.bootstrap4.min.css">
+    <script src="../js/dataTables.bootstrap4.min.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('#example').DataTable();
+         } );
+    </script>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<section>
+            <div class="row bg-dark">
+                <div class="col-sm-12 ">
+                    <div class="row">
+                       
+                        <div class="col-sm-12" style="padding: 0px;">
+                            <nav class="navbar navbar-expand-md navbar-dark height_70">
+                                <a href="#" class="navbar-brand">
+									<img src="../img/New folder_5/FINAL/13.png" style="height:70px;width:220px;" />
+                                </a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                        data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse m_collaps_menu" id="navbarCollapse" style="margin-right: -15px;">
+                                    <div class="navbar-nav  menu_div">
+                                        <div class="header_div">
+                                            <i class="fa fa-database database_icon" aria-hidden="true"></i>
+                                            <p id="CreditValue" class="header_icon">Credit</p>
+                                            <i class="fa fa-btc database_icon" aria-hidden="true"></i>
+                                            <i style="color:#fff;" class="fa fa-refresh" aria-hidden="true" onclick="CallCreditDisplay()"></i>
+                                        </div>
+                                       
+                                        <i class="fa fa-user user_icon" aria-hidden="true"></i>
+                                        <div class="user_name">
+                                            <p class="white">hello</p>
+                                            <h4 class="margin_top_m_25 margin_5_top">UserName</h4>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-nav ml-auto">
+                                        <button type="button" class="btn btn-primary m_hamurger_menu " id="hamburger" data-toggle="modal" data-target="#myModallogout" data-backdrop="static" data-keyboard="false">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</div>
+	<div class="container-fluid back_img">
+        <section> 
+            <div class="row"> 
+                 <div class="col-sm-12 padding_0"> 
+                      <div class="main_div"> 
+                      <img src="../img/New folder_5/FINAL/2.png" class="icon_h_w"><br> 
+                      <span class="sub_header_text">Home</span> 
+                      </div> 
+                      <div class="main_div" style="margin-right:-5px;"> 
+                      <img src="../img/New folder_5/FINAL/3.png" class="icon_h_w"><br> 
+                      <span class="sub_header_text">Bet</span> 
+                      </div> 
+                      <div class="main_div">
+                          <a href="../html/bonus.html" >
+                           <img src="../img/New folder_5/FINAL/4.png" class="icon_h_w" ><br> 
+                           <span class="sub_header_text">Bonus</span> </a>
+                      </div> 
+                      <div class="main_div"> 
+                        <a href="../html/lottery_result.html" >
+                           <img src="../img/New folder_5/FINAL/5.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Draw</span> </a>
+                      </div> 
+                      <div class="main_div"> 
+                           <img src="../img/New folder_5/FINAL/6.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Games</span> 
+                      </div> 
+                      <div class="main_div" style="margin-right:-5px;"> 
+                        <a href="../html/set_number.html" >
+                           <img src="../img/New folder_5/FINAL/7.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">Fav.number</span> </a>
+                      </div> 
+                      <div class="main_div7"> 
+                           <img src="../img/New folder_5/FINAL/8.png" class="icon_h_w"><br> 
+                           <span class="sub_header_text">AF</span> 
+                      </div> 
+                 </div> 
+            </div> 
+             
+       </section>
+		<section>
+			<div class="row margin_top_2">
+				<div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4 text_center">
+                            <h2>
+                                <img src="../img/New folder_5/123.png" width="75px;" /> <span style="color:#bc881b;">Manage Number Sets</span>
+                            </h2>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+					
+				</div>
+            </div>
+            <div class="row card_margin">
+               <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-warning btn_create"><i class="fa fa-plus" aria-hidden="true"></i> Create Batch Number</button>
+                                </div>
+                            </div>
+                            <div class="row margin_51">
+                                <div class="col-sm-12">
+                                    <div class="table-responsive">
+                                    
+                                    <table id="example" class="table table-striped table-bordered table_border" style="width:100%">
+                                        <thead class="table_head_color ">
+                                            <tr>
+                                                <th>Name of number groups</th>
+                                                <th>Created Date</th>
+                                                <th>Manage Date</th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>
+                                                    <h3 class="color_gear"><i class="fa fa-cog" aria-hidden="true"></i></h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td> <h3 class="color_gear"><i class="fa fa-cog" aria-hidden="true"></i></h3></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donna Snider</td>
+                                                <td>Customer Support</td>
+                                                <td> <h3 class="color_gear"><i class="fa fa-cog" aria-hidden="true"></i></h3></td>
+                                            </tr>
+                                        </tbody>
+                                    </div>
+                                        
+                                    </table>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+			
+		</section>
+		
+
+	
+
+	
+
+     <section>
+			<div class="row" style="padding-top: 10px;">
+				<div class="col-sm-12" style="text-align: center;">
+					<p style="color:#fff;"><span>SECURE WEBSITE</span><span></span>
+						<span> 100% GUARANTEE</span>
+					</p>
+					<p style="color:#fff;margin-top: -1rem"><span>&copy;	2020 Copyright -</span>
+						<span style="color:#c7bda2">THONGKONBET.COM</span>
+						<span>ALL RIGHTS RESERVED.</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+
+
+		<!-- hamburger menu -->
+		<!-- The Modal -->
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-lg modal_lg">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header modal_header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body modal_body">
+						<div class="row">
+							<div class="col-sm-5"></div>
+							<div class="col-sm-4" >
+								<div class="menu">
+									<ul type="none">
+										<li><i class="fa fa-user fa_user_size"></i></li>
+										<li>user name
+											<b>
+												<font>credit $0.00</font>
+											</b>
+											<div class="dropdown-divider "></div>
+										</li>
+										<!-- <li>
+											<div class="dropdown-divider "></div>
+										</li> -->
+										<li><a href="#">User account settings</a></li>
+										<li><a href="#">Bank account</a></li>
+										<li><a href="#">Top up</a></li>
+										<li><a href="#">How to use</a></li>
+										<li><a href="#">Help center</a></li>
+										<li class="nav-item dropdown"
+											style="margin-right: 5px;background: #fff;border-radius: 13px;">
+											<a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+												data-toggle="dropdown">
+												<span class="flag-icon flag-icon-th"></span> <span>Thai</span>
+											</a>
+											<div class="dropdown-menu">
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-th margin_right_5"></span><span>Thai</span></a>
+												<a class="dropdown-item" href="#"><span
+														class="flag-icon flag-icon-gb margin_right_5"></span><span>English</span></a>
+												
+											</div>
+										</li>
+										<li>
+											<div class="dropdown-divider "></div>
+										</li>
+										<li><a href=""><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- end of hamburger menu -->
+
+		
+
+	</div>
+</body>
+
+</html>
